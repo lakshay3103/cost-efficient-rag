@@ -1,0 +1,23 @@
+[
+  {
+    "num_vectors": 100000,
+    "self_hosted_monthly_usd": 15.09,
+    "self_hosted_config": "2 vCPU / 4GB RAM VM (e.g. e2-small)",
+    "managed_monthly_usd": 80,
+    "savings_pct": 81.1
+  },
+  {
+    "num_vectors": 1000000,
+    "self_hosted_monthly_usd": 55.86,
+    "self_hosted_config": "4 vCPU / 16GB RAM VM (e.g. e2-standard-4)",
+    "managed_monthly_usd": 80,
+    "savings_pct": 30.2
+  },
+  {
+    "num_vectors": 10000000,
+    "self_hosted_monthly_usd": 228.58,
+    "self_hosted_config": "8 vCPU / 64GB RAM VM (e.g. e2-highmem-8)",
+    "managed_monthly_usd": 160,
+    "savings_pct": -42.9
+  }
+]

@@ -1,0 +1,12 @@
+fastapi==0.115.0
+uvicorn[standard]==0.32.0
+chromadb>=0.5.23
+openai==1.54.0
+pydantic==2.9.2
+pydantic-settings==2.6.0
+pypdf==5.1.0
+beautifulsoup4==4.12.3
+markdown==3.7
+python-dotenv==1.0.1
+tiktoken==0.8.0
+numpy==1.26.4

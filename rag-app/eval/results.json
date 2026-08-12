@@ -1,0 +1,594 @@
+{
+  "config": {
+    "top_k": 5,
+    "mock_mode": true,
+    "embedding_model": "text-embedding-3-small",
+    "llm_model": "gpt-4o-mini",
+    "min_relevance_score": 0.3
+  },
+  "summary": {
+    "num_questions": 22,
+    "num_answerable": 19,
+    "num_unanswerable": 3,
+    "retrieval": {
+      "mean_hit_rate": 0,
+      "mean_recall": 0.0,
+      "mean_mrr": 0.0,
+      "mean_ndcg": 0.0,
+      "mean_context_precision": 0.0
+    },
+    "answer_quality": {
+      "mean_em": 0,
+      "mean_f1": 0.0772,
+      "mean_faithfulness": 1,
+      "mean_relevance": 1
+    },
+    "abstention": {
+      "correctly_abstained_rate": 1
+    },
+    "latency": {
+      "p50_total_ms": 3.19,
+      "p95_total_ms": 3.68,
+      "p50_retrieval_ms": 3.19,
+      "p95_retrieval_ms": 3.68
+    },
+    "cost": {
+      "total_prompt_tokens": 0,
+      "total_completion_tokens": 0
+    }
+  },
+  "per_question": [
+    {
+      "id": "q01",
+      "question": "Who conceived the Python programming language and where?",
+      "answerable": true,
+      "answer": "I don't have enough relevant information in the indexed documents to answer that question.",
+      "grounded": false,
+      "retrieval_latency_ms": 25.99,
+      "generation_latency_ms": 0.01,
+      "total_latency_ms": 25.99,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "retrieval": {
+        "hit_rate": 0,
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0,
+        "context_precision": 0.0,
+        "num_gold_relevant": 0
+      },
+      "em": 0,
+      "f1": 0.129,
+      "judge": {
+        "faithfulness": 1,
+        "relevance": 1,
+        "rationale": "Mock mode: no context, correctly abstained."
+      }
+    },
+    {
+      "id": "q02",
+      "question": "What is Python named after?",
+      "answerable": true,
+      "answer": "I don't have enough relevant information in the indexed documents to answer that question.",
+      "grounded": false,
+      "retrieval_latency_ms": 3.59,
+      "generation_latency_ms": 0.0,
+      "total_latency_ms": 3.59,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "retrieval": {
+        "hit_rate": 0,
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0,
+        "context_precision": 0.0,
+        "num_gold_relevant": 0
+      },
+      "em": 0,
+      "f1": 0.0741,
+      "judge": {
+        "faithfulness": 1,
+        "relevance": 1,
+        "rationale": "Mock mode: no context, correctly abstained."
+      }
+    },
+    {
+      "id": "q03",
+      "question": "When did Python 2 reach end of life?",
+      "answerable": true,
+      "answer": "I don't have enough relevant information in the indexed documents to answer that question.",
+      "grounded": false,
+      "retrieval_latency_ms": 3.41,
+      "generation_latency_ms": 0.0,
+      "total_latency_ms": 3.42,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "retrieval": {
+        "hit_rate": 0,
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0,
+        "context_precision": 0.0,
+        "num_gold_relevant": 0
+      },
+      "em": 0,
+      "f1": 0.0,
+      "judge": {
+        "faithfulness": 1,
+        "relevance": 1,
+        "rationale": "Mock mode: no context, correctly abstained."
+      }
+    },
+    {
+      "id": "q04",
+      "question": "What document describes Python's design philosophy and who wrote it?",
+      "answerable": true,
+      "answer": "I don't have enough relevant information in the indexed documents to answer that question.",
+      "grounded": false,
+      "retrieval_latency_ms": 3.18,
+      "generation_latency_ms": 0.0,
+      "total_latency_ms": 3.18,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "retrieval": {
+        "hit_rate": 0,
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0,
+        "context_precision": 0.0,
+        "num_gold_relevant": 0
+      },
+      "em": 0,
+      "f1": 0.0833,
+      "judge": {
+        "faithfulness": 1,
+        "relevance": 1,
+        "rationale": "Mock mode: no context, correctly abstained."
+      }
+    },
+    {
+      "id": "q05",
+      "question": "What is the reference implementation of Python called?",
+      "answerable": true,
+      "answer": "I don't have enough relevant information in the indexed documents to answer that question.",
+      "grounded": false,
+      "retrieval_latency_ms": 3.04,
+      "generation_latency_ms": 0.0,
+      "total_latency_ms": 3.05,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "retrieval": {
+        "hit_rate": 0,
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0,
+        "context_precision": 0.0,
+        "num_gold_relevant": 0
+      },
+      "em": 0,
+      "f1": 0.1667,
+      "judge": {
+        "faithfulness": 1,
+        "relevance": 1,
+        "rationale": "Mock mode: no context, correctly abstained."
+      }
+    },
+    {
+      "id": "q06",
+      "question": "What does the Global Interpreter Lock (GIL) prevent in CPython?",
+      "answerable": true,
+      "answer": "I don't have enough relevant information in the indexed documents to answer that question.",
+      "grounded": false,
+      "retrieval_latency_ms": 3.51,
+      "generation_latency_ms": 0.0,
+      "total_latency_ms": 3.51,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "retrieval": {
+        "hit_rate": 0,
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0,
+        "context_precision": 0.0,
+        "num_gold_relevant": 0
+      },
+      "em": 0,
+      "f1": 0.1176,
+      "judge": {
+        "faithfulness": 1,
+        "relevance": 1,
+        "rationale": "Mock mode: no context, correctly abstained."
+      }
+    },
+    {
+      "id": "q07",
+      "question": "What does 'pip' stand for?",
+      "answerable": true,
+      "answer": "I don't have enough relevant information in the indexed documents to answer that question.",
+      "grounded": false,
+      "retrieval_latency_ms": 3.18,
+      "generation_latency_ms": 0.0,
+      "total_latency_ms": 3.19,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "retrieval": {
+        "hit_rate": 0,
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0,
+        "context_precision": 0.0,
+        "num_gold_relevant": 0
+      },
+      "em": 0,
+      "f1": 0.0,
+      "judge": {
+        "faithfulness": 1,
+        "relevance": 1,
+        "rationale": "Mock mode: no context, correctly abstained."
+      }
+    },
+    {
+      "id": "q08",
+      "question": "In what year was the paper that introduced the Transformer architecture published, and what was it called?",
+      "answerable": true,
+      "answer": "I don't have enough relevant information in the indexed documents to answer that question.",
+      "grounded": false,
+      "retrieval_latency_ms": 2.95,
+      "generation_latency_ms": 0.0,
+      "total_latency_ms": 2.96,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "retrieval": {
+        "hit_rate": 0,
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0,
+        "context_precision": 0.0,
+        "num_gold_relevant": 0
+      },
+      "em": 0,
+      "f1": 0.1379,
+      "judge": {
+        "faithfulness": 1,
+        "relevance": 1,
+        "rationale": "Mock mode: no context, correctly abstained."
+      }
+    },
+    {
+      "id": "q09",
+      "question": "What mechanism is the core innovation of the Transformer architecture?",
+      "answerable": true,
+      "answer": "I don't have enough relevant information in the indexed documents to answer that question.",
+      "grounded": false,
+      "retrieval_latency_ms": 3.19,
+      "generation_latency_ms": 0.0,
+      "total_latency_ms": 3.19,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "retrieval": {
+        "hit_rate": 0,
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0,
+        "context_precision": 0.0,
+        "num_gold_relevant": 0
+      },
+      "em": 0,
+      "f1": 0.1333,
+      "judge": {
+        "faithfulness": 1,
+        "relevance": 1,
+        "rationale": "Mock mode: no context, correctly abstained."
+      }
+    },
+    {
+      "id": "q10",
+      "question": "Why do Transformers need positional encodings?",
+      "answerable": true,
+      "answer": "I don't have enough relevant information in the indexed documents to answer that question.",
+      "grounded": false,
+      "retrieval_latency_ms": 3.25,
+      "generation_latency_ms": 0.0,
+      "total_latency_ms": 3.25,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "retrieval": {
+        "hit_rate": 0,
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0,
+        "context_precision": 0.0,
+        "num_gold_relevant": 0
+      },
+      "em": 0,
+      "f1": 0.1212,
+      "judge": {
+        "faithfulness": 1,
+        "relevance": 1,
+        "rationale": "Mock mode: no context, correctly abstained."
+      }
+    },
+    {
+      "id": "q11",
+      "question": "Which part of the Transformer does BERT use, and how is it trained?",
+      "answerable": true,
+      "answer": "I don't have enough relevant information in the indexed documents to answer that question.",
+      "grounded": false,
+      "retrieval_latency_ms": 3.02,
+      "generation_latency_ms": 0.01,
+      "total_latency_ms": 3.02,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "retrieval": {
+        "hit_rate": 0,
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0,
+        "context_precision": 0.0,
+        "num_gold_relevant": 0
+      },
+      "em": 0,
+      "f1": 0.0741,
+      "judge": {
+        "faithfulness": 1,
+        "relevance": 1,
+        "rationale": "Mock mode: no context, correctly abstained."
+      }
+    },
+    {
+      "id": "q12",
+      "question": "How many parameters did GPT-3 have?",
+      "answerable": true,
+      "answer": "I don't have enough relevant information in the indexed documents to answer that question.",
+      "grounded": false,
+      "retrieval_latency_ms": 2.92,
+      "generation_latency_ms": 0.0,
+      "total_latency_ms": 2.93,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "retrieval": {
+        "hit_rate": 0,
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0,
+        "context_precision": 0.0,
+        "num_gold_relevant": 0
+      },
+      "em": 0,
+      "f1": 0.0,
+      "judge": {
+        "faithfulness": 1,
+        "relevance": 1,
+        "rationale": "Mock mode: no context, correctly abstained."
+      }
+    },
+    {
+      "id": "q13",
+      "question": "How does the computational cost of self-attention scale with input sequence length?",
+      "answerable": true,
+      "answer": "I don't have enough relevant information in the indexed documents to answer that question.",
+      "grounded": false,
+      "retrieval_latency_ms": 2.94,
+      "generation_latency_ms": 0.0,
+      "total_latency_ms": 2.94,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "retrieval": {
+        "hit_rate": 0,
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0,
+        "context_precision": 0.0,
+        "num_gold_relevant": 0
+      },
+      "em": 0,
+      "f1": 0.0741,
+      "judge": {
+        "faithfulness": 1,
+        "relevance": 1,
+        "rationale": "Mock mode: no context, correctly abstained."
+      }
+    },
+    {
+      "id": "q14",
+      "question": "What temperature range is crude oil typically heated to before atmospheric distillation?",
+      "answerable": true,
+      "answer": "I don't have enough relevant information in the indexed documents to answer that question.",
+      "grounded": false,
+      "retrieval_latency_ms": 2.83,
+      "generation_latency_ms": 0.0,
+      "total_latency_ms": 2.84,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "retrieval": {
+        "hit_rate": 0,
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0,
+        "context_precision": 0.0,
+        "num_gold_relevant": 0
+      },
+      "em": 0,
+      "f1": 0.0741,
+      "judge": {
+        "faithfulness": 1,
+        "relevance": 1,
+        "rationale": "Mock mode: no context, correctly abstained."
+      }
+    },
+    {
+      "id": "q15",
+      "question": "What is the reflux ratio in a distillation column and what trade-off does it involve?",
+      "answerable": true,
+      "answer": "I don't have enough relevant information in the indexed documents to answer that question.",
+      "grounded": false,
+      "retrieval_latency_ms": 3.07,
+      "generation_latency_ms": 0.0,
+      "total_latency_ms": 3.07,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "retrieval": {
+        "hit_rate": 0,
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0,
+        "context_precision": 0.0,
+        "num_gold_relevant": 0
+      },
+      "em": 0,
+      "f1": 0.0976,
+      "judge": {
+        "faithfulness": 1,
+        "relevance": 1,
+        "rationale": "Mock mode: no context, correctly abstained."
+      }
+    },
+    {
+      "id": "q16",
+      "question": "Why is vacuum distillation used downstream of atmospheric distillation?",
+      "answerable": true,
+      "answer": "I don't have enough relevant information in the indexed documents to answer that question.",
+      "grounded": false,
+      "retrieval_latency_ms": 2.85,
+      "generation_latency_ms": 0.0,
+      "total_latency_ms": 2.85,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "retrieval": {
+        "hit_rate": 0,
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0,
+        "context_precision": 0.0,
+        "num_gold_relevant": 0
+      },
+      "em": 0,
+      "f1": 0.069,
+      "judge": {
+        "faithfulness": 1,
+        "relevance": 1,
+        "rationale": "Mock mode: no context, correctly abstained."
+      }
+    },
+    {
+      "id": "q17",
+      "question": "What are three secondary conversion processes used in refineries?",
+      "answerable": true,
+      "answer": "I don't have enough relevant information in the indexed documents to answer that question.",
+      "grounded": false,
+      "retrieval_latency_ms": 3.19,
+      "generation_latency_ms": 0.0,
+      "total_latency_ms": 3.19,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "retrieval": {
+        "hit_rate": 0,
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0,
+        "context_precision": 0.0,
+        "num_gold_relevant": 0
+      },
+      "em": 0,
+      "f1": 0.0,
+      "judge": {
+        "faithfulness": 1,
+        "relevance": 1,
+        "rationale": "Mock mode: no context, correctly abstained."
+      }
+    },
+    {
+      "id": "q18",
+      "question": "What are the three key controllable process setpoints mentioned for refinery optimization?",
+      "answerable": true,
+      "answer": "I don't have enough relevant information in the indexed documents to answer that question.",
+      "grounded": false,
+      "retrieval_latency_ms": 3.19,
+      "generation_latency_ms": 0.0,
+      "total_latency_ms": 3.19,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "retrieval": {
+        "hit_rate": 0,
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0,
+        "context_precision": 0.0,
+        "num_gold_relevant": 0
+      },
+      "em": 0,
+      "f1": 0.0,
+      "judge": {
+        "faithfulness": 1,
+        "relevance": 1,
+        "rationale": "Mock mode: no context, correctly abstained."
+      }
+    },
+    {
+      "id": "q19",
+      "question": "What do sulfur recovery units do in a refinery?",
+      "answerable": true,
+      "answer": "I don't have enough relevant information in the indexed documents to answer that question.",
+      "grounded": false,
+      "retrieval_latency_ms": 3.38,
+      "generation_latency_ms": 0.0,
+      "total_latency_ms": 3.38,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "retrieval": {
+        "hit_rate": 0,
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0,
+        "context_precision": 0.0,
+        "num_gold_relevant": 0
+      },
+      "em": 0,
+      "f1": 0.1143,
+      "judge": {
+        "faithfulness": 1,
+        "relevance": 1,
+        "rationale": "Mock mode: no context, correctly abstained."
+      }
+    },
+    {
+      "id": "q20",
+      "question": "What was the capital of the Roman Empire in 500 AD?",
+      "answerable": false,
+      "answer": "I don't have enough relevant information in the indexed documents to answer that question.",
+      "grounded": false,
+      "retrieval_latency_ms": 3.57,
+      "generation_latency_ms": 0.0,
+      "total_latency_ms": 3.57,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "correctly_abstained": 1
+    },
+    {
+      "id": "q21",
+      "question": "What is the current market price of Brent crude oil?",
+      "answerable": false,
+      "answer": "I don't have enough relevant information in the indexed documents to answer that question.",
+      "grounded": false,
+      "retrieval_latency_ms": 3.22,
+      "generation_latency_ms": 0.0,
+      "total_latency_ms": 3.22,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "correctly_abstained": 1
+    },
+    {
+      "id": "q22",
+      "question": "Who is the current CEO of OpenAI?",
+      "answerable": false,
+      "answer": "I don't have enough relevant information in the indexed documents to answer that question.",
+      "grounded": false,
+      "retrieval_latency_ms": 3.68,
+      "generation_latency_ms": 0.0,
+      "total_latency_ms": 3.68,
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "correctly_abstained": 1
+    }
+  ]
+}
